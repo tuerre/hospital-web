@@ -7,7 +7,40 @@
     <link rel="icon" type="image/png" href="/public/img/favicon.png">
     <link rel="stylesheet" href="./register.css">
 </head>
-<body>
+<body> 
+    <header></header>
 
+    <main>
+        <div class="login__Container" id="login__Container">
+            <form class="form">
+                <div class="titleOne">Bienvenido,<br><span>ingrese sus datos para continuar</span></div>
+                <input class="input" name="email" placeholder="Email" type="email" required>
+                <input class="input" name="name" placeholder="Nombres y Apellidos" type="text" required>
+                <input class="input" name="direccion" placeholder="Dirección" type="text" required>
+                <input class="input" name="numero" placeholder="Número de Teléfono" type="tel" required>
+                <input class="input" name="nacimiento" placeholder="Fecha de Nacimiento" type="date" required>
+                <input class="input" name="medico" placeholder="Medíco" type="text" required>
+
+                <button class="button-confirm" id="btn-confirm">Agendar</button>
+            </form>
+        </div>
+    </main>
+
+    <div class="notification" id="notification">
+        <div class="svg-container"></div>
+        <div class="content">
+            <p class="title">Registrado !</p>
+            <p class="message">Bien hecho!<br>Tu cita fué agendada correctamente.</p>
+        </div>
+        <button class="btn" id="btn-next">  
+            <a href="/src/index-page/index.html">
+                <svg fill="none" stroke="mediumseagreen" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                </svg>
+            </a>
+        </button>
+    </div>
+
+    <script src="./register.js"></script>
 </body>
 </html>
